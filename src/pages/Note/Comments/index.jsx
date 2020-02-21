@@ -21,12 +21,12 @@ let Comments = props => {
 	};
 
 	return (
-		<Col md={{ span: 6, offset: 3 }}>
+		<Col md={{ span: 10, offset: 1 }}>
 			{props.note &&
 				props.note.comments.map(coment => (
 					<Alert variant={'info'}>
-						<h4>{coment.comment}</h4>
-						<div className="d-flex justify-content-between align-items-center">
+						<p>{coment.comment}</p>
+						<div className="d-flex justify-content-between align-items-center flex-wrap">
 							<p>Author:{coment.name}</p>
 							<p>Date:{coment.date}</p>
 						</div>
